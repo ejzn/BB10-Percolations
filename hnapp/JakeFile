@@ -1,0 +1,11 @@
+/*
+ * Copyright nobody
+ * Erik Johnson @erikjohnzon
+ *
+ */
+
+ desc("Package the application using the native BB10 SDK packager");
+ task('default', [], require('./build/build').package);
+
+ desc("Package the application using the native BB10 SDK packager");
+ task('package', [], require('./build/build').package);
