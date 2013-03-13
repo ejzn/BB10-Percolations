@@ -9,5 +9,5 @@
 ## Installation
 
 1. npm install will pull down the required node modules
-2. jake will create your bar file for you. It will look into the app directory OR you can provide it as follows jake <folder>
-3. jake deploy <ip-address>  will deploy the application onto the device
+2. jake will create your bar file for you. It will look into the app directory OR you can provide it as follows jake package[<folder>]
+3. jake deploy[<ip-address>,<path-to-bar-file>,<password>]
