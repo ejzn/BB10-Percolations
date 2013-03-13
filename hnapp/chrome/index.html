@@ -5,15 +5,34 @@
         <meta name="viewport" content="user-scalable=no, target-densitydpi=device-dpi, width=device-width">
         <title>Hacker News BB10</title>
         <script src="platform://webplatform.js"></script>
+        <script src="local:///lib/rest.js"></script>
         <script>
-            qnx.webplatform.getController().enableWebInspector = true;
+            var controller = qnx.webplatform.getController(),
+                webview;
 
-            var webview = qnx.webplatform.createWebView(function (value, eventId) {
+            // Setup controller
+            controller.enableWebInspector = true;
+            controller.visible = true;
+            controller.active = true;
+            controller.devicePixelRatio = 1;
+            controller.zOrder = 0;
+            controller.backgroundColor = 0xFFFFFFFF;
+            controller.enableCrossSiteXHR = true;
+            qnx.webplatform.getApplication().windowVisible = true;
+
+
+            /* Setup our main webview
+            webview = qnx.webplatform.createWebView(function (value, eventId) {
                 webview.setGeometry(0, 0, screen.width, screen.height);
                 webview.visible = true;
                 webview.active = true;
-                console.log("woot");
-            });
+                webview.url = "http://news.ycombinator.com";
+                webview.zOrder = 1;
+                webview.devicePixelRatio = 1;
+                webview.enableCrossSiteXHR = true;
+                webview.allowQnxObject = true;
+                webview.blackgroundColor = 0x00FFFFFF;
+            });*/
         </script>
     </head>
     <body>

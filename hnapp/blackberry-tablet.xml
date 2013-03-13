@@ -8,6 +8,7 @@
   <asset>options</asset>
   <asset>wwe</asset>
   <asset>chrome/index.html</asset>
+  <asset>lib/rest.js</asset>
   <initialWindow>
     <systemChrome>none</systemChrome>
     <transparent>true</transparent>
