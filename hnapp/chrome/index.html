@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, target-densitydpi=device-dpi, width=device-width">
+        <title>Hacker News BB10</title>
+        <script src="platform://webplatform.js"></script>
+        <script>
+            qnx.webplatform.getController().enableWebInspector = true;
+
+            var webview = qnx.webplatform.createWebView(function (value, eventId) {
+                webview.setGeometry(0, 0, screen.width, screen.height);
+                webview.visible = true;
+                webview.active = true;
+                console.log("woot");
+            });
+        </script>
+    </head>
+    <body>
+        I am the man behind the curtain.
+    </body>
+</html>

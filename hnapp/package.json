@@ -1,0 +1,22 @@
+{
+  "name": "hnBB10app",
+  "version": "0.0.1",
+  "description": "A simple hacker news reader for BB10",
+  "repository": "https://github.com/erikjohnzon/BB10-Percolations/hnapp",
+  "author": {
+    "name": "Erik Johnson",
+    "url": "https://github.com/erikjohnzon/BB10-Percolations"
+  },
+  "licenses": [{
+    "type": "Apache 2.0",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0"
+  }],
+  "devDependencies": {
+    "jake": "latest",
+    "async": "0.2.5"
+  },
+  "files": [
+    "node_modules",
+    "README.md"
+  ]
+}

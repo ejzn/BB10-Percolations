@@ -1,0 +1,16 @@
+/*
+ * Copyright nobody
+ * Erik Johnson @erikjohnzon
+ *
+ */
+
+ desc("Package the application using the native BB10 SDK packager");
+ task('default', [], require('./build/build').pkg);
+
+ desc("Package the application using the native BB10 SDK packager");
+ task('package', [], require('./build/build').pkg);
+
+ desc("Deploy application using BB10 QNX Deploy tools");
+ task('deploy', [], function () {
+     require('./build/build').deploy(Array.prototype.slice.call(arguments))
+ });
